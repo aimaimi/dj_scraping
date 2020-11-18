@@ -4,5 +4,6 @@ from . import views
 app_name = "scrape"
 
 urlpatterns = [
-    path("", views.index, name="home")
+    # path("", views.index, name="home")
+    path("", views.GetData.as_view(), name="home")
 ]
