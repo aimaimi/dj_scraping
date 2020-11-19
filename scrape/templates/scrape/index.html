@@ -7,3 +7,10 @@
   <button type="submit">Request</button>
 </form>
 url: {{url}}
+<br>
+<hr>
+{% for res in result %}
+  title: {{res.title}}
+  url: {{res.url}}
+  picture: {{res.picture}}
+{% endfor %}
